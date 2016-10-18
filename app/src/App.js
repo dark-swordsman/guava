@@ -5,6 +5,7 @@ import IndexRoute from 'react-router/lib/IndexRoute';
 import Router from 'react-router/lib/Router';
 import Route from 'react-router/lib/Route';
 
+import Layout from './components/Layout';
 import Pages from './pages';
 
 import './App.css';
@@ -14,7 +15,7 @@ class App extends Component {
     return (
       <div>
         <Router history={browserHistory}>
-          <Route path="/">
+          <Route path="/" component={Layout}>
             <IndexRoute component={Pages.Home} />
           </Route>
         </Router>
