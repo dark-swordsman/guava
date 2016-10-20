@@ -1,9 +1,15 @@
 import Home from './Home/Home';
+import List from './List/List';
+import Temperature from './Temperature/Temperature';
 
 export {
-  Home
+  Home,
+  List,
+  Temperature,
 };
 
 export default {
-  Home
+  Home,
+  List,
+  Temperature,
 };
