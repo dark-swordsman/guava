@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 import Link from 'react-router/lib/Link';
-import Nav from 'react-bootstrap/lib/Nav';
 import Navbar from 'react-bootstrap/lib/Navbar';
 
 import './Header.css';

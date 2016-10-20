@@ -33,7 +33,6 @@ class List extends Component {
     const title = (titleId) => {
       switch (titleId) {
         case 1: return(<span>Temperature</span>)
-        break;
         default: return(<span>No Data</span>)
       }
     }
@@ -41,7 +40,6 @@ class List extends Component {
     const description = (descId) => {
       switch (descId) {
         case 1: return(<span>Calculate in F, C, or K!</span>)
-        break;
         default: return(<span>No Data</span>)
       }
     }
@@ -49,7 +47,6 @@ class List extends Component {
     const link = (linkId) => {
       switch (linkId) {
         case 1: return('/temperature')
-        break;
         default: return('/')
       }
     }
