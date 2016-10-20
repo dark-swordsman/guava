@@ -13,10 +13,12 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <div>
+      <div className="container">
         <Router history={browserHistory}>
           <Route path="/" component={Layout}>
             <IndexRoute component={Pages.Home} />
+            <Route path="/list" component={Pages.List} />
+            <Route path="/temperature" component={Pages.Temperature} />
           </Route>
         </Router>
       </div>
