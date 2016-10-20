@@ -19,6 +19,7 @@ class App extends Component {
             <IndexRoute component={Pages.Home} />
             <Route path="/list" component={Pages.List} />
             <Route path="/temperature" component={Pages.Temperature} />
+            <Route path="/slope" component={Pages.Slope} />
           </Route>
         </Router>
       </div>

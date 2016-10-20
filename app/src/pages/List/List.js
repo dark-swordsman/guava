@@ -33,13 +33,15 @@ class List extends Component {
     const title = (titleId) => {
       switch (titleId) {
         case 1: return(<span>Temperature</span>)
+        case 2: return(<span>Slope</span>)
         default: return(<span>No Data</span>)
       }
     }
 
     const description = (descId) => {
       switch (descId) {
-        case 1: return(<span>Calculate in F, C, or K!</span>)
+        case 1: return(<span>Calculate in F and C!</span>)
+        case 2: return(<span>Calculate the Slope of a Line!</span>)
         default: return(<span>No Data</span>)
       }
     }
@@ -47,6 +49,7 @@ class List extends Component {
     const link = (linkId) => {
       switch (linkId) {
         case 1: return('/temperature')
+        case 2: return('/slope')
         default: return('/')
       }
     }
@@ -77,6 +80,7 @@ class List extends Component {
           <Col sm={6}>
             <ListGroup>
               {listing(1)}
+              {listing(2)}
             </ListGroup>
           </Col>
           <Col sm={3}>
